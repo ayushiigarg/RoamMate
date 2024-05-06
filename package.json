@@ -2,6 +2,7 @@
   "name": "roammate",
   "version": "1.0.0",
   "description": "RoamMate: Your personalized travel companion. Plan unforgettable day itineraries with AI-generated recommendations based on your preferences, interests, and budget.",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "fullstack" : "concurrently \"npm run backend\" \"npm run frontend\"",
