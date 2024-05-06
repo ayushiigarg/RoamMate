@@ -4,7 +4,9 @@
   "description": "RoamMate: Your personalized travel companion. Plan unforgettable day itineraries with AI-generated recommendations based on your preferences, interests, and budget.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "fullstack" : "concurrently\"npm run backend\" \"npm run frontend\"",
+    "backend" :  "nodemon backend/index.js",
+    "frontend" : "cd frontend && npm run dev"
   },
   "repository": {
     "type": "git",
