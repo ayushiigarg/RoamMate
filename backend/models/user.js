@@ -23,6 +23,14 @@ password: {
         },
         message: "Invalid password. Password must contain at least one uppercase letter, one lowercase letter, one number, one special character, and be at least 8 characters long."
     }
-}
+},
+  trips: [
+    {
+      type: Schema.Types.ObjectId,
+      ref: "Trip",
+    },
+  ]
 
 });
+const User = mongoose.model("User",userSchema);
+export default User;
