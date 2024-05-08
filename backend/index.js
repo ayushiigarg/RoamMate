@@ -12,7 +12,7 @@ connectDB();
 const app = express(); //instance of express js
 //middlewares
 app.use(express.json());
-app.use(express.urlencoded({extended : true}));
+app.use(express.urlencoded({extended : false}));
 app.use(cookieParser());
 const PORT = process.env.PORT || 3000;
 //Routes
